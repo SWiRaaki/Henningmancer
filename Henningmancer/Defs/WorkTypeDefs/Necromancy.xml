@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WorkTypeDef>
+		<defName>Necromancy</defName>
+		<labelShort>necromancy</labelShort>
+		<pawnLabel>Necromancer</pawnLabel>
+		<gerundLabel>henning</gerundLabel>
+		<description>Perform henning</description>
+		<verb>Henning at</verb>
+		<naturalPriority>90</naturalPriority>
+		<disabledForSlaves>true</disabledForSlaves>
+		<relevantSkills>
+			<li>Intellectual</li>
+		</relevantSkills>
+		<workTags>
+			<li>Intellectual</li>
+			<li>Commoner</li>
+			<li>AllWork</li>
+		</workTags>
+	</WorkTypeDef>
+</Defs>

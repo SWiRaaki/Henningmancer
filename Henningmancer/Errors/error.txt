@@ -1,0 +1,39 @@
+Error while instantiating a mod of type Henningmancer.Source.Henningmancer: System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> HarmonyLib.HarmonyException: Patching exception in method null ---> System.ArgumentException: Undefined target method for patch method static System.Void Henningmancer.Source.RecipeWorkerGrindCorpseToBoneMeal::Postfix(Verse.RecipeDef recipeDef, Verse.Pawn worker, System.Collections.Generic.List`1<Verse.Thing> ingredients, Verse.Thing dominantIngredient, Verse.Thing billGiver, System.Collections.Generic.IEnumerable`1& __result)
+[Ref A0380541]
+  at HarmonyLib.PatchClassProcessor.PatchWithAttributes (System.Reflection.MethodBase& lastOriginal, System.Boolean unpatch) [0x00047] in <7d173b5c15724e3091f1e8ddff8e2abc>:0 
+  at HarmonyLib.PatchClassProcessor.Patch () [0x00064] in <7d173b5c15724e3091f1e8ddff8e2abc>:0 
+   --- End of inner exception stack trace ---
+[Ref 5CD2AC81]
+  at HarmonyLib.PatchClassProcessor.ReportException (System.Exception exception, System.Reflection.MethodBase original) [0x00154] in <7d173b5c15724e3091f1e8ddff8e2abc>:0 
+  at HarmonyLib.PatchClassProcessor.Patch () [0x00096] in <7d173b5c15724e3091f1e8ddff8e2abc>:0 
+  at HarmonyLib.Harmony.<PatchAll>b__10_1 (System.Type type) [0x00007] in <7d173b5c15724e3091f1e8ddff8e2abc>:0 
+  at HarmonyLib.CollectionExtensions.Do[T] (System.Collections.Generic.IEnumerable`1[T] sequence, System.Action`1[T] action) [0x00014] in <7d173b5c15724e3091f1e8ddff8e2abc>:0 
+  at HarmonyLib.CollectionExtensions.DoIf[T] (System.Collections.Generic.IEnumerable`1[T] sequence, System.Func`2[T,TResult] condition, System.Action`1[T] action) [0x00007] in <7d173b5c15724e3091f1e8ddff8e2abc>:0 
+  at HarmonyLib.Harmony.PatchAll (System.Reflection.Assembly assembly) [0x00006] in <7d173b5c15724e3091f1e8ddff8e2abc>:0 
+  at HarmonyLib.Harmony.PatchAll () [0x0001d] in <7d173b5c15724e3091f1e8ddff8e2abc>:0 
+<0x2599f53d580 + 0x0007a> <unknown method>
+(wrapper managed-to-native) System.Reflection.RuntimeConstructorInfo.InternalInvoke(System.Reflection.RuntimeConstructorInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeConstructorInfo.InternalInvoke (System.Object obj, System.Object[] parameters, System.Boolean wrapExceptions) [0x00005] in <51fded79cd284d4d911c5949aff4cb21>:0 
+   --- End of inner exception stack trace ---
+[Ref 6BB72591]
+  at System.Reflection.RuntimeConstructorInfo.InternalInvoke (System.Object obj, System.Object[] parameters, System.Boolean wrapExceptions) [0x0001a] in <51fded79cd284d4d911c5949aff4cb21>:0 
+  at System.Reflection.RuntimeConstructorInfo.DoInvoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00086] in <51fded79cd284d4d911c5949aff4cb21>:0 
+  at System.Reflection.RuntimeConstructorInfo.Invoke (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <51fded79cd284d4d911c5949aff4cb21>:0 
+  at System.RuntimeType.CreateInstanceImpl (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes, System.Threading.StackCrawlMark& stackMark) [0x0022b] in <51fded79cd284d4d911c5949aff4cb21>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes) [0x0009c] in <51fded79cd284d4d911c5949aff4cb21>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Object[] args) [0x00000] in <51fded79cd284d4d911c5949aff4cb21>:0 
+  at Verse.LoadedModManager.CreateModClasses () [0x00085] in <cb53cd4422904947932d33f561ad8d15>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+Verse.LoadedModManager:CreateModClasses ()
+Verse.LoadedModManager:LoadAllActiveMods (bool)
+Verse.PlayDataLoader:DoPlayLoad ()
+Verse.PlayDataLoader:LoadAllPlayData (bool)
+Verse.Root/<>c:<Start>b__10_1 ()
+Verse.LongEventHandler:RunEventFromAnotherThread (System.Action)
+Verse.LongEventHandler/<>c:<UpdateCurrentAsynchronousEvent>b__28_0 ()
+System.Threading.ThreadHelper:ThreadStart_Context (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object)
+System.Threading.ThreadHelper:ThreadStart ()

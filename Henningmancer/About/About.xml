@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Henningmancer</name>
+	<authors>
+		<li>Raki</li>
+		<li>shdw</li>
+	</authors>
+	<packageId>mods.raki.henningmancer</packageId>
+	<modVersion>0.1.0</modVersion>
+	<description>This mod adds a necromancer race and necromancing features into the game!</description>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+		</li>
+	</modDependencies>
+</ModMetaData>

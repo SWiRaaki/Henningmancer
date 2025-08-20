@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>Necromancy_Basic</defName>
+		<label>Basic Necromancy</label>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites />
+	</ResearchProjectDef>
+</Defs>

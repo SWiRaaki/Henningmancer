@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<WorkGiverDef>
+		<defName>DoBillsGrindCorpses</defName>
+		<label>grind corpses</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Necromancy</workType>
+		<priorityInType>80</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Corpcinerator</li>
+		</fixedBillGiverDefs>
+		<verb>grind at</verb>
+		<gerund>grinding at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+</Defs>

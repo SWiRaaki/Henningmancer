@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StatDef>
+		<defName>GrindCorpseBoneMealYield</defName>
+		<label>(grind:fresh) bone meal</label>
+		<category>Basics</category>
+		<toStringStyle>Integer</toStringStyle>
+		<toStringNumberSense>Absolute</toStringNumberSense>
+		<defaultBaseValue>0</defaultBaseValue>
+		<showIfUndefined>true</showIfUndefined>
+		<workerClass>Henningmancer.Source.StatWorkerGrindCorpseToBoneMeal</workerClass>
+		<displayPriorityInCategory>54</displayPriorityInCategory>
+	</StatDef>
+
+	<StatDef>
+		<defName>GrindCorpseLeatherYield</defName>
+		<label>(grind:fresh) leather</label>
+		<category>Basics</category>
+		<toStringStyle>Integer</toStringStyle>
+		<toStringNumberSense>Absolute</toStringNumberSense>
+		<defaultBaseValue>0</defaultBaseValue>
+		<showIfUndefined>true</showIfUndefined>
+		<workerClass>Henningmancer.Source.StatWorkerGrindCorpseToBoneMealLeather</workerClass>
+		<displayPriorityInCategory>53</displayPriorityInCategory>
+	</StatDef>
+
+	<StatDef>
+		<defName>GrindCorpseMeatYield</defName>
+		<label>(grind:fresh) meat</label>
+		<category>Basics</category>
+		<toStringStyle>Integer</toStringStyle>
+		<toStringNumberSense>Absolute</toStringNumberSense>
+		<defaultBaseValue>0</defaultBaseValue>
+		<showIfUndefined>true</showIfUndefined>
+		<workerClass>Henningmancer.Source.StatWorkerGrindCorpseToBoneMealMeat</workerClass>
+		<displayPriorityInCategory>52</displayPriorityInCategory>
+	</StatDef>
+
+	<StatDef>
+		<defName>GrindCorpseBoneMealDesiccatedYield</defName>
+		<label>(grind:desiccated) bone meal</label>
+		<category>Basics</category>
+		<toStringStyle>Integer</toStringStyle>
+		<toStringNumberSense>Absolute</toStringNumberSense>
+		<defaultBaseValue>0</defaultBaseValue>
+		<showIfUndefined>true</showIfUndefined>
+		<workerClass>Henningmancer.Source.StatWorkerGrindCorpseToBoneMealDesiccated</workerClass>
+		<displayPriorityInCategory>51</displayPriorityInCategory>
+	</StatDef>
+</Defs>

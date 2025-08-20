@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>BoneMeal</defName>
+		<label>bone meal</label>
+		<description>Ground bone powder used for necromancy.</description>
+		<stackLimit>100</stackLimit>
+		<statBases>
+			<MarketValue>0.05</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Necromancy</li>
+			<li>Manufactured</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Item/bonemeal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+</Defs>

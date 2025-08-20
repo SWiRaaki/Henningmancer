@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RecipeDef>
+		<defName>GrindCorpseToBoneMeal</defName>
+		<label>grind corpse to bone meal</label>
+		<description>Grinding a corpse into bone meal.</description>
+		<workerCounterClass>Henningmancer.Source.RecipeWorkerCounterGrindCorpseToBoneMeal</workerCounterClass>
+		<jobString>Grinding.</jobString>
+		<!-- NEEDS BANANA! GO! BANANA! LIKE! BANANAMAN! -->
+		<workAmount>50</workAmount>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>false</interruptIfIngredientIsRotting>
+		<uiIconThing>BoneMeal</uiIconThing>
+		<forceHiddenSpecialFilters>
+			<li>AllowFresh</li>
+			<li>AllowRotten</li>
+		</forceHiddenSpecialFilters>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Corpses</li>
+			</categories>
+			<disallowedCategories>
+				<li>CorpsesMechanoid</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">CorpsesDrone</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products />
+		<modExtensions>
+			<li Class="Henningmancer.Source.GrindCorpseToBoneMealExtension">
+				<ProductDef>BoneMeal</ProductDef>
+				<ScaleByBodySize>true</ScaleByBodySize>
+				<TreatDessicatedAsSkeleton>true</TreatDessicatedAsSkeleton>
+				<YieldBody>0.65</YieldBody>
+				<YieldSkeleton>0.8</YieldSkeleton>
+				<YieldHumanlike>1.0</YieldHumanlike>
+				<YieldAnimal>0.8</YieldAnimal>
+				<YieldAny>0.7</YieldAny>
+				<YieldLeather>0.5</YieldLeather>
+				<YieldMeat>0.25</YieldMeat>
+				<MeatDef>Meat_Twisted</MeatDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+</Defs>
